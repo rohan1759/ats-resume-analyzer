@@ -39,7 +39,7 @@ An AI-powered web application that analyzes resumes against job descriptions and
 
 **Backend**
 
-* Flask / Node.js (based on your setup)
+* Node.js (based on your setup)
 
 **AI / ML**
 
@@ -101,22 +101,6 @@ npm run dev
 
 ---
 
-## 🎯 Future Improvements
-
-* 🔐 Authentication (Login/Signup)
-* 📄 Resume history tracking
-* 📊 Advanced AI scoring
-* 🌍 Multi-language support
-* 📥 Downloadable reports
-
----
-
-## 📸 Screenshots
-
-> Add screenshots here (UI, results dashboard, etc.)
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
@@ -132,10 +116,7 @@ This project is open-source and available under the MIT License.
 
 ## 💼 Author
 
-**Your Name**
-
-* GitHub: https://github.com/your-username
-* LinkedIn: (add your link)
+**Rohan Ram**
 
 ---
 
