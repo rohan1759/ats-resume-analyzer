@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import API from "./services/api";
 import UploadSection from "./components/UploadSection";
 import ResultsDashboard from "./components/ResultsDashboard";
 import LoadingState from "./components/LoadingState";
@@ -12,6 +12,8 @@ export default function App() {
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  console.log(API.defaults.baseURL)
 
   const handleSubmit = async () => {
     try {
@@ -26,7 +28,7 @@ export default function App() {
       formData.append("file", file);
       formData.append("jobDescription", jobDescription);
 
-      const res = await axios.post("/api/analyze", formData);
+      const res = await API.post("/analyze", formData);
       if (res.data.is_resume === false) {
         setError(`⚠️ ${res.data.error_message} Please upload a valid resume.`);
         setResults(null);
